@@ -1,0 +1,148 @@
+
+<!DOCTYPE html> 
+
+<html> 
+    <head>
+        <meta charset="utf-8">
+
+        <title>SK8 Shop</title>
+        <link rel="stylesheet" href="modelo.css">
+        <title></title>
+    
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/skate_logo.png">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul> 
+         </header>
+            <section class="slider">
+                <div class="slider-container">
+                    <div class="slide fade">
+                        <img src="img/promo1.jpg" alt="Promoção 1">
+                        <div class="promo-text">
+                            <h2>50% OFF em Skates</h2>
+                            <p>Até o final do mês. Aproveite!</p>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="img/promo2.jpg" alt="Promoção 2">
+                        <div class="promo-text">
+                            <h2>Frete Grátis</h2>
+                            <p>Em compras acima de R$ 299,99!</p>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="img/promo3.jpg" alt="Promoção 3">
+                        <div class="promo-text">
+                            <h2>Desconto Especial em Longboards</h2>
+                            <p>Somente essa semana, 20% OFF.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+    <section class="produtos">
+        <div class="container">
+        <div class="produto">
+            <img src="img/skate1.jpg" alt="Skate 1">
+            <h3>Skate Completo</h3>
+            <p>R$ 399,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto">
+            <img src="img/skate2.jpg" alt="Skate 2">
+            <h3>Skate Cruiser</h3>
+            <p>R$ 249,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/skate3.jpg" alt="Skate 3">
+            <h3>Skate Longboard</h3>
+            <p>R$ 499,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto">
+            <img src="img/skate4.jpg" alt="Skate 4">
+            <h3>Skate Profissional</h3>
+            <p>R$ 599,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/skate1.jpg" alt="Skate 5">
+            <h3>Skate Completo</h3>
+            <p>R$ 399,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/skate2.jpg" alt="Skate 6">
+            <h3>Skate Cruiser</h3>
+            <p>R$ 249,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/skate3.jpg" alt="Skate 7">
+            <h3>Skate Longboard</h3>
+            <p>R$ 499,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/skate4.jpg" alt="Skate 8">
+            <h3>Skate Profissional</h3>
+            <p>R$ 599,99</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+    </section>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                let slides = document.getElementsByClassName("slide");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 3000); // Muda a cada 3 segundos
+            }
+        </script>
+        <section class="produtos">
+            <div class="container">
+            <div class="elipse">
+                <a href="Skates">
+
+                <h1>
+                    Skates
+                </h1>
+            </a>
+            </div>
+            <div class="elipse">
+                <h1>
+                    Peças
+                </h1>
+            </div>
+            <div class="elipse">
+               <h1>
+                Kits
+               </h1>
+            </div>
+            <div class="elipse">
+                <h1>
+                    Moda
+                </h1>
+            </div>
+            </div>
+        </section>
+        </body>
+</html>
