@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elipse com Imagem de Fundo</title>
+    <style>
+        .elipse {
+            width: 300px;               /* Largura da elipse */
+            height: 150px;              /* Altura da elipse */
+            background-image: url('img/promo1.jpg');  /* Imagem de fundo */
+            background-size: cover;    /* A imagem cobre toda a área da elipse */
+            background-position: center;  /* Centraliza a imagem dentro da elipse */
+            border-radius: 50%;         /* Torna a div uma elipse */
+            padding: 20px;              /* Padding interno, separando o conteúdo das bordas */
+            overflow: hidden;           /* Garante que a imagem não ultrapasse os limites da elipse */
+            position: relative;         /* Necessário para posicionar o texto acima da imagem */
+        }
+
+        .elipse p {
+            position: absolute;        /* Posiciona o texto acima da imagem */
+            top: 50%;                   /* Centraliza verticalmente o texto */
+            left: 50%;                  /* Centraliza horizontalmente o texto */
+            transform: translate(-50%, -50%);  /* Ajusta o texto para que fique perfeitamente no centro */
+            color: white;               /* Cor do texto para contraste com a imagem */
+            font-size: 18px;            /* Tamanho da fonte do texto */
+            font-weight: bold;          /* Deixa o texto em negrito */
+            text-align: center;         /* Alinha o texto no centro */
+        }
+    </style>
+</head>
+<body>
+    <div class="elipse">
+        <p>Texto acima da imagem de fundo</p>
+    </div>
+</body>
+</html>

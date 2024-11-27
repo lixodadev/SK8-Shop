@@ -1,0 +1,34 @@
+
+        .elipse {
+            width: 300px;               /* Largura da elipse */
+            height: 150px;              /* Altura da elipse */
+            background-image: url('imagem.jpg');  /* Caminho para a imagem */
+            background-size: cover;    /* A imagem cobre toda a área da elipse */
+            background-position: center;  /* A imagem é centralizada na elipse */
+            border-radius: 50%;         /* Forma a elipse */
+            padding: 20px;              /* Padding interno, separando o conteúdo das bordas */
+            overflow: hidden;           /* Esconde qualquer conteúdo que ultrapasse os limites da elipse */
+            text-align: center;         /* Centraliza o texto */
+            display: flex;
+            justify-content: center;    /* Centraliza o conteúdo horizontalmente */
+            align-items: center;        /* Centraliza o conteúdo verticalmente */
+            color: white;               /* Cor do texto */
+            font-size: 18px;            /* Tamanho da fonte */
+            font-weight: bold;          /* Deixa o texto em negrito */
+        }
+        .elipse {
+            width: 250px;              /* Largura da elipse */
+            height: 250px;             /* Altura da elipse */
+            background-color: #fff;
+            background-size: cover;   /* A imagem cobre toda a área da elipse */
+            background-position: center; /* A imagem fica centralizada na elipse */
+            border-radius: 50%;        /* Arredonda os cantos para criar a elipse */
+            overflow: hidden;          /* Garante que a imagem não ultrapasse a borda da elipse */
+            padding: 15px;  
+            margin: 50px auto; 
+            background-image: url(img/promo1.jpg);
+        
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
