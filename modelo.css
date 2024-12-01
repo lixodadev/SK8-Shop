@@ -127,7 +127,7 @@ header {
 }
 
 .produto {
-    background-color: #333;
+    background-color: #a8a8a8;
     padding: 50px 20px;
     border-radius: 10px;
     width: 400px;
@@ -151,7 +151,7 @@ header {
 }
 
 .btn-comprar {
-    background-color: #f39c12;
+    background-color: #fc6731;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -162,7 +162,7 @@ header {
 }
 
 .btn-comprar:hover {
-    background-color: #e67e22;
+    background-color:#ff5416;
 }
 
 /* Rodapé */
